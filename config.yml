@@ -1,0 +1,36 @@
+gui:
+  showFileTree: false
+  theme:
+    activeBorderColor:
+      - '#89b4fa'
+      - bold
+    inactiveBorderColor:
+      - '#a6adc8'
+    optionsTextColor:
+      - '#89b4fa'
+    selectedLineBgColor:
+      - '#313244'
+    cherryPickedCommitBgColor:
+      - '#45475a'
+    cherryPickedCommitFgColor:
+      - '#89b4fa'
+    unstagedChangesColor:
+      - '#f38ba8'
+    defaultFgColor:
+      - '#cdd6f4'
+    searchingActiveBorderColor:
+      - '#f9e2af'
+
+git:
+  paging:
+    colorArg: never
+    pager: delta --dark --paging=never
+
+os:
+  editInTerminal: true
+  # edit: 'code {{filename}}'
+  # editAtLine: 'code {{filename}}'
+  # editAtLineAndWait: 'code {{filename}}'
+  edit: 'nvim {{filename}}'
+  editAtLine: 'nvim --line={{line}} {{filename}}'
+  editAtLineAndWait: 'nvim --block --line={{line}} {{filename}}'
